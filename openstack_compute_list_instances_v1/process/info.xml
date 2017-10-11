@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taskInfo version="1.0">
+  <info name="username" description="Openstack username"></info>
+  <info name="pw" type="encrypted" description="Openstack password"></info>
+  <info name="enable_debug_logging" description="Enable Debug Logging"></info>
+</taskInfo>

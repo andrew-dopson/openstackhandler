@@ -1,0 +1,377 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://devstack.openstack.stack/v2.0/notification-methods
+    body:
+      encoding: UTF-8
+      string: '{"name":"important notification","type":"EMAIL","address":"admin@example.com","period":0}'
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:28 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '280'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name": "important notification", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/6738c694-72ee-4379-8f8d-e861d1624a80",
+        "rel": "self"}], "period": 0, "address": "admin@example.com", "type": "EMAIL",
+        "id": "6738c694-72ee-4379-8f8d-e861d1624a80"}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:28 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack/v2.0/notification-methods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:28 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2200'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"elements": [{"name": "Swift Operation DL", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/17ba8ca4-6312-4333-ad1f-f656e5d72824",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "17ba8ca4-6312-4333-ad1f-f656e5d72824"}, {"name": "test.monasca.fitness.notification.20160825135325",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/19c20ad3-7a39-48ba-82eb-92f681dbc47f",
+        "rel": "self"}], "period": 0, "address": "http://devstack.openstack.stack:13131",
+        "type": "WEBHOOK", "id": "19c20ad3-7a39-48ba-82eb-92f681dbc47f"}, {"name":
+        "important notification", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/6738c694-72ee-4379-8f8d-e861d1624a80",
+        "rel": "self"}], "period": 0, "address": "admin@example.com", "type": "EMAIL",
+        "id": "6738c694-72ee-4379-8f8d-e861d1624a80"}, {"name": "DL Monsoon Alerts
+        Green ", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3"}, {"name": "Arno
+        Uhlig", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/9c98287b-abde-47b9-aa6a-14ad7cbe7d2b",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type": "EMAIL",
+        "id": "9c98287b-abde-47b9-aa6a-14ad7cbe7d2b"}, {"name": "mailto-team-data-services",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6"}, {"name": "hgw",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/c997084b-5338-4981-98cd-b8ee13b2acf7",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type":
+        "EMAIL", "id": "c997084b-5338-4981-98cd-b8ee13b2acf7"}], "links": [{"href":
+        "http://devstack.openstack.stack/v2.0/notification-methods", "rel": "self"}]}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:28 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack/v2.0/notification-methods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:28 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2200'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"elements": [{"name": "Swift Operation DL", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/17ba8ca4-6312-4333-ad1f-f656e5d72824",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "17ba8ca4-6312-4333-ad1f-f656e5d72824"}, {"name": "test.monasca.fitness.notification.20160825135325",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/19c20ad3-7a39-48ba-82eb-92f681dbc47f",
+        "rel": "self"}], "period": 0, "address": "http://devstack.openstack.stack:13131",
+        "type": "WEBHOOK", "id": "19c20ad3-7a39-48ba-82eb-92f681dbc47f"}, {"name":
+        "important notification", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/6738c694-72ee-4379-8f8d-e861d1624a80",
+        "rel": "self"}], "period": 0, "address": "admin@example.com", "type": "EMAIL",
+        "id": "6738c694-72ee-4379-8f8d-e861d1624a80"}, {"name": "DL Monsoon Alerts
+        Green ", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3"}, {"name": "Arno
+        Uhlig", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/9c98287b-abde-47b9-aa6a-14ad7cbe7d2b",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type": "EMAIL",
+        "id": "9c98287b-abde-47b9-aa6a-14ad7cbe7d2b"}, {"name": "mailto-team-data-services",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6"}, {"name": "hgw",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/c997084b-5338-4981-98cd-b8ee13b2acf7",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type":
+        "EMAIL", "id": "c997084b-5338-4981-98cd-b8ee13b2acf7"}], "links": [{"href":
+        "http://devstack.openstack.stack/v2.0/notification-methods", "rel": "self"}]}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:28 GMT
+- request:
+    method: put
+    uri: http://devstack.openstack.stack/v2.0/notification-methods/6738c694-72ee-4379-8f8d-e861d1624a80
+    body:
+      encoding: UTF-8
+      string: '{"name":"important notification","address":"notification_methods@example.com","type":"EMAIL","period":0}'
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '332'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name": "important notification", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/6738c694-72ee-4379-8f8d-e861d1624a80/6738c694-72ee-4379-8f8d-e861d1624a80",
+        "rel": "self"}], "period": 0, "address": "notification_methods@example.com",
+        "type": "EMAIL", "id": "6738c694-72ee-4379-8f8d-e861d1624a80"}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:29 GMT
+- request:
+    method: delete
+    uri: http://devstack.openstack.stack/v2.0/notification-methods/6738c694-72ee-4379-8f8d-e861d1624a80
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 204
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:29 GMT
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:29 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack/v2.0/notification-methods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1918'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"elements": [{"name": "Swift Operation DL", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/17ba8ca4-6312-4333-ad1f-f656e5d72824",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "17ba8ca4-6312-4333-ad1f-f656e5d72824"}, {"name": "test.monasca.fitness.notification.20160825135325",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/19c20ad3-7a39-48ba-82eb-92f681dbc47f",
+        "rel": "self"}], "period": 0, "address": "http://devstack.openstack.stack:13131",
+        "type": "WEBHOOK", "id": "19c20ad3-7a39-48ba-82eb-92f681dbc47f"}, {"name":
+        "DL Monsoon Alerts Green ", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3"}, {"name": "Arno
+        Uhlig", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/9c98287b-abde-47b9-aa6a-14ad7cbe7d2b",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type": "EMAIL",
+        "id": "9c98287b-abde-47b9-aa6a-14ad7cbe7d2b"}, {"name": "mailto-team-data-services",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6"}, {"name": "hgw",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/c997084b-5338-4981-98cd-b8ee13b2acf7",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type":
+        "EMAIL", "id": "c997084b-5338-4981-98cd-b8ee13b2acf7"}], "links": [{"href":
+        "http://devstack.openstack.stack/v2.0/notification-methods", "rel": "self"}]}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:29 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack/v2.0/notification-methods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1918'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"elements": [{"name": "Swift Operation DL", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/17ba8ca4-6312-4333-ad1f-f656e5d72824",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "17ba8ca4-6312-4333-ad1f-f656e5d72824"}, {"name": "test.monasca.fitness.notification.20160825135325",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/19c20ad3-7a39-48ba-82eb-92f681dbc47f",
+        "rel": "self"}], "period": 0, "address": "http://devstack.openstack.stack:13131",
+        "type": "WEBHOOK", "id": "19c20ad3-7a39-48ba-82eb-92f681dbc47f"}, {"name":
+        "DL Monsoon Alerts Green ", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "97311b1b-bf6a-4fb0-99b8-2b0e24e9d1f3"}, {"name": "Arno
+        Uhlig", "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/9c98287b-abde-47b9-aa6a-14ad7cbe7d2b",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type": "EMAIL",
+        "id": "9c98287b-abde-47b9-aa6a-14ad7cbe7d2b"}, {"name": "mailto-team-data-services",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6",
+        "rel": "self"}], "period": 0, "address": "mail@example.org",
+        "type": "EMAIL", "id": "ad3ce2b6-f5a5-4a06-99c4-e791f767b0a6"}, {"name": "hgw",
+        "links": [{"href": "http://devstack.openstack.stack/v2.0/notification-methods/c997084b-5338-4981-98cd-b8ee13b2acf7",
+        "rel": "self"}], "period": 0, "address": "mail@example.org", "type":
+        "EMAIL", "id": "c997084b-5338-4981-98cd-b8ee13b2acf7"}], "links": [{"href":
+        "http://devstack.openstack.stack/v2.0/notification-methods", "rel": "self"}]}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:29 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack/v2.0/notification-methods/bogus_id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.42.0
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - gAAAAABX4qoodffg4YThj3lwf-xHWSAfA8Taj2oa84XO5VxZXUlGk4T_yqnk3-72pLNmZvtel9oeLS8IR-uS7AhQ_RqOxadekGy_wD070JOCB5dffqdxVhytoQBkV6TZQWUDjbGaPMoHkOod8VEIwB7CNcAE9hccDRGF4hjBzdd8Hr2tPxim0dJtKNsS-S18GKsDK8_U3Tpmxzf2Uuzi_ZOtSMRHIt9XHmdQuDS4O3cfgZyVS1q-Hh0
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 15:41:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains; preload
+      Connection:
+      - Keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 15:41:29 GMT
+recorded_with: VCR 3.0.3

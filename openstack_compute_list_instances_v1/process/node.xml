@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskDefinition id="openstack_compute_list_instances" name="Openstack Compute List Instances" schema_version="1.0" version="1">
+    <author>andrew.dopson@b-dconsulting.com</author>
+    <description>Lists the instances for a specific project</description>
+    <helpurl></helpurl>
+    <visible>true</visible>
+    <deferrable>false</deferrable>
+    <parameters>
+        <parameter id="openstack_url" label="Openstack URL" required="true"
+            tooltip="The URL to interface with Openstack"></parameter>
+        <parameter id="project_name" label="Project Name" required="true"
+            tooltip="The name of the Openstack Project you want to use."></parameter>
+        <parameter id="domain" label="Domain" required="true"
+            tooltip="The Openstack domain your want to use."></parameter>
+    </parameters>
+    <handler name="openstack_compute_list_instances" version="1">
+        <infos>
+            <info name="username">&lt;%= @info['username'] %&gt;</info>
+            <info name="pw">&lt;%= @info['pw'] %&gt;</info>
+            <info name="enable_debug_logging">&lt;%= @info['enable_debug_logging'] %&gt;</info>
+        </infos>
+        <parameters>
+            <parameter name='openstack_url'>&lt;%= @parameters['openstack_url'] %&gt;</parameter>
+            <parameter name='project_name'>&lt;%= @parameters['project_name'] %&gt;</parameter>
+            <parameter name='domain'>&lt;%= @parameters['domain'] %&gt;</parameter>
+        </parameters>
+    </handler>
+    <results format="xml">
+        <result name="servers"/>
+    </results>
+</taskDefinition>

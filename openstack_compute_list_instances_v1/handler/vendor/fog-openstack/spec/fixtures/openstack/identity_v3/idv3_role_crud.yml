@@ -1,0 +1,617 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://devstack.openstack.stack:35357/v3/roles
+    body:
+      encoding: UTF-8
+      string: '{"role":{"name":"foobar23"}}'
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 201
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:03 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-85e9ab54-21aa-4219-a3bd-b32823e18a2a
+      Content-Length:
+      - '162'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"role": {"id": "32788c44cae74e09bc0e8d36550e28ee", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee"}, "name":
+        "foobar23"}}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:03 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles?name=foobar23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:03 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-b6cbcc88-e89c-4611-b7fe-561a3056c948
+      Content-Length:
+      - '268'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles?name=foobar23",
+        "previous": null, "next": null}, "roles": [{"id": "32788c44cae74e09bc0e8d36550e28ee",
+        "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee"},
+        "name": "foobar23"}]}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: patch
+    uri: http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee
+    body:
+      encoding: UTF-8
+      string: '{"role":{"name":"baz23"}}'
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:03 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-de246498-1cf5-4613-9dca-5fe2fb3d3e87
+      Content-Length:
+      - '159'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"role": {"id": "32788c44cae74e09bc0e8d36550e28ee", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee"}, "name":
+        "baz23"}}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles?name=baz23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-baacc52f-5046-4db1-8b1f-224d8c5da01a
+      Content-Length:
+      - '262'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles?name=baz23",
+        "previous": null, "next": null}, "roles": [{"id": "32788c44cae74e09bc0e8d36550e28ee",
+        "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee"},
+        "name": "baz23"}]}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-17587a9b-1916-4a20-845d-0f8b5570eb29
+      Content-Length:
+      - '1659'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles", "previous":
+        null, "next": null}, "roles": [{"id": "13c811edcd2a46dca5fed6252fd50cd2",
+        "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/13c811edcd2a46dca5fed6252fd50cd2"},
+        "name": "service"}, {"id": "32788c44cae74e09bc0e8d36550e28ee", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee"}, "name":
+        "baz23"}, {"id": "4572d4dbab1e4b31b9c6ac7b63e2f8e1", "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/4572d4dbab1e4b31b9c6ac7b63e2f8e1"},
+        "name": "testrole"}, {"id": "48464b0373554d74b87e14380df097e6", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/48464b0373554d74b87e14380df097e6"}, "name":
+        "monitoring-delegate"}, {"id": "5929fb4077c3415c9850e66f2c2be16b", "links":
+        {"self": "http://devstack.openstack.stack:35357/v3/roles/5929fb4077c3415c9850e66f2c2be16b"},
+        "name": "admin"}, {"id": "7e4e00f7c94145a1855f39c32331ff5d", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/7e4e00f7c94145a1855f39c32331ff5d"}, "name":
+        "monasca-user"}, {"id": "d46ad249d4dd40eb840d20ec917d682e", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/d46ad249d4dd40eb840d20ec917d682e"}, "name":
+        "ResellerAdmin"}, {"id": "d97660751404495ab8c405826d547c16", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/d97660751404495ab8c405826d547c16"}, "name":
+        "Member"}, {"id": "eb4ca4ce31d748ccb91d2052a2f5bedf", "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/eb4ca4ce31d748ccb91d2052a2f5bedf"},
+        "name": "monasca-agent"}, {"id": "eb9f0f3b348042ffa65f9d33e5d72014", "links":
+        {"self": "http://devstack.openstack.stack:35357/v3/roles/eb9f0f3b348042ffa65f9d33e5d72014"},
+        "name": "anotherrole"}]}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: delete
+    uri: http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 204
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-767e21dc-761e-4482-95fd-5a3e0b27f8d0
+      Content-Length:
+      - '0'
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-63f42dcb-4c22-4061-a8ee-7919b55bfb96
+      Content-Length:
+      - '1508'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles", "previous":
+        null, "next": null}, "roles": [{"id": "13c811edcd2a46dca5fed6252fd50cd2",
+        "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/13c811edcd2a46dca5fed6252fd50cd2"},
+        "name": "service"}, {"id": "4572d4dbab1e4b31b9c6ac7b63e2f8e1", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/4572d4dbab1e4b31b9c6ac7b63e2f8e1"}, "name":
+        "testrole"}, {"id": "48464b0373554d74b87e14380df097e6", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/48464b0373554d74b87e14380df097e6"}, "name":
+        "monitoring-delegate"}, {"id": "5929fb4077c3415c9850e66f2c2be16b", "links":
+        {"self": "http://devstack.openstack.stack:35357/v3/roles/5929fb4077c3415c9850e66f2c2be16b"},
+        "name": "admin"}, {"id": "7e4e00f7c94145a1855f39c32331ff5d", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/7e4e00f7c94145a1855f39c32331ff5d"}, "name":
+        "monasca-user"}, {"id": "d46ad249d4dd40eb840d20ec917d682e", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/d46ad249d4dd40eb840d20ec917d682e"}, "name":
+        "ResellerAdmin"}, {"id": "d97660751404495ab8c405826d547c16", "links": {"self":
+        "http://devstack.openstack.stack:35357/v3/roles/d97660751404495ab8c405826d547c16"}, "name":
+        "Member"}, {"id": "eb4ca4ce31d748ccb91d2052a2f5bedf", "links": {"self": "http://devstack.openstack.stack:35357/v3/roles/eb4ca4ce31d748ccb91d2052a2f5bedf"},
+        "name": "monasca-agent"}, {"id": "eb9f0f3b348042ffa65f9d33e5d72014", "links":
+        {"self": "http://devstack.openstack.stack:35357/v3/roles/eb9f0f3b348042ffa65f9d33e5d72014"},
+        "name": "anotherrole"}]}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles/32788c44cae74e09bc0e8d36550e28ee
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-14d9b30f-b67c-4c3e-90cf-7232fc9c0ab8
+      Content-Length:
+      - '114'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": {"message": "Could not find role: 32788c44cae74e09bc0e8d36550e28ee",
+        "code": 404, "title": "Not Found"}}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles?name=foobar23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-200a1853-04ec-4f30-a376-914f910f4bc5
+      Content-Length:
+      - '116'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles?name=foobar23",
+        "previous": null, "next": null}, "roles": []}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles?name=baz23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-ac4e4ede-90ac-4d55-afb5-2b20b53fe71e
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles?name=baz23",
+        "previous": null, "next": null}, "roles": []}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:04 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles?name=foobar23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-63dce21f-5040-49ca-9a7d-580872931597
+      Content-Length:
+      - '116'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles?name=foobar23",
+        "previous": null, "next": null}, "roles": []}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:05 GMT
+- request:
+    method: get
+    uri: http://devstack.openstack.stack:35357/v3/roles?name=baz23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.38.0
+      Proxy-Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Auth-Token:
+      - 7f72291092a647578b115b853d129693
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 03 May 2016 13:52:04 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-36760e9e-4666-42bd-8c0d-e249e37e069d
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/json
+      X-Cache:
+      - MISS from i056593-u1404
+      X-Cache-Lookup:
+      - MISS from i056593-u1404:3128
+      Via:
+      - 1.1 i056593-u1404 (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://devstack.openstack.stack:35357/v3/roles?name=baz23",
+        "previous": null, "next": null}, "roles": []}'
+    http_version: 
+  recorded_at: Tue, 03 May 2016 13:52:05 GMT
+recorded_with: VCR 3.0.1
